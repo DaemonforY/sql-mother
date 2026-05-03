@@ -16,6 +16,11 @@ import ecommerceUserBehaviorAnalysis from "./custom/数据淘金客";
 import continueLoginDays from "./custom/连续登录天数";
 import nextDayRetention from "./custom/用户次日留存";
 import categorySalesTopN from "./custom/品类销售TopN";
+import repurchaseUserAnalysis from "./custom/复购用户分析";
+import orderConversionFunnel from "./custom/订单转化漏斗";
+import secondHighestSalary from "./custom/薪资第二高";
+import departmentHighestSalary from "./custom/部门最高薪资";
+import silentUserRecall from "./custom/用户沉默召回";
 
 /**
  * 自定义关卡列表
@@ -38,7 +43,12 @@ const customLevels: LevelType[] = [
   ecommerceUserBehaviorAnalysis,
   continueLoginDays,
   nextDayRetention,
-  categorySalesTopN
+  categorySalesTopN,
+  repurchaseUserAnalysis,
+  orderConversionFunnel,
+  secondHighestSalary,
+  departmentHighestSalary,
+  silentUserRecall
 ];
 
 export default customLevels;

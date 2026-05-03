@@ -53,11 +53,12 @@
           
           <div class="level-grid">
             <div 
-              v-for="level in customLevels" 
+              v-for="(level, index) in customLevels" 
               :key="level.key"
               class="level-card custom-level"
               @click="goToLevel(level.key)"
             >
+              <div class="level-number custom-level-number">{{ index + 1 }}</div>
               <div class="level-content">
                 <h3 class="level-title">{{ level.title }}</h3>
                 <div class="level-meta">
@@ -208,6 +209,21 @@ const getDifficultyText = (difficulty?: number) => {
   align-items: center;
   justify-content: center;
   font-size: 18px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.custom-level .custom-level-number {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
   margin-right: 12px;
   flex-shrink: 0;
 }
