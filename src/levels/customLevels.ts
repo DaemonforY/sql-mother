@@ -13,6 +13,9 @@ import hospitalAppointmentAnalysis from "./custom/白衣天使";
 import deliveryPerformanceAnalysis from "./custom/极速达人";
 import stockTradingAnalysis from "./custom/华尔街风云";
 import ecommerceUserBehaviorAnalysis from "./custom/数据淘金客";
+import continueLoginDays from "./custom/连续登录天数";
+import nextDayRetention from "./custom/用户次日留存";
+import categorySalesTopN from "./custom/品类销售TopN";
 
 /**
  * 自定义关卡列表
@@ -32,7 +35,10 @@ const customLevels: LevelType[] = [
   hospitalAppointmentAnalysis,
   deliveryPerformanceAnalysis,
   stockTradingAnalysis,
-  ecommerceUserBehaviorAnalysis
+  ecommerceUserBehaviorAnalysis,
+  continueLoginDays,
+  nextDayRetention,
+  categorySalesTopN
 ];
 
 export default customLevels;
