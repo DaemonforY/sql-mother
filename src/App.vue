@@ -20,12 +20,18 @@
           <a-menu-item key="/levels">关卡</a-menu-item>
           <a-menu-item key="/playground">广场</a-menu-item>
           <a-menu-item key="codex-status">
-            <span @click.stop="openCodexStatus" style="cursor: pointer; display: inline-block; width: 100%;">
+            <span
+              @click.stop="openCodexStatus"
+              style="cursor: pointer; display: inline-block; width: 100%"
+            >
               Codex 用量
             </span>
           </a-menu-item>
           <a-menu-item key="about">
-            <span @click.stop="showAboutModal" style="cursor: pointer; display: inline-block; width: 100%;">
+            <span
+              @click.stop="showAboutModal"
+              style="cursor: pointer; display: inline-block; width: 100%"
+            >
               <user-outlined />
               关于作者
             </span>
@@ -45,18 +51,18 @@
     <div class="footer">
       <p>
         <a-space size="middle">
-          <a href="https://www.code-nav.cn" target="_blank">编程导航</a>
-          <a href="https://www.laoyujianli.com" target="_blank">写简历神器</a>
-          <a href="https://www.mianshiya.com" target="_blank">面试刷题</a>
+          <a href="https://www.c--ode-nav.cn" target="_blank">编程导航</a>
+          <a href="https://www.lao--yujianli.com" target="_blank">写简历神器</a>
+          <a href="https://www.mians--hiya.com" target="_blank">面试刷题</a>
         </a-space>
       </p>
       <p>
         SQL之母 - SQL 自学网站 ©{{ currentYear }} by
-        <a href="https://github.com/liyupi" target="_blank">Bryan</a>
+        <a href="https://github.com/DaemonforY" target="_blank">Bryan</a>
       </p>
     </div>
     <a-back-top :style="{ right: '24px' }" />
-    
+
     <!-- 关于作者弹窗组件 -->
     <AboutAuthorModal v-model:visible="aboutModalVisible" />
   </div>
@@ -65,11 +71,11 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { 
-  GithubOutlined, 
-  BookOutlined, 
-  SolutionOutlined, 
-  UserOutlined 
+import {
+  GithubOutlined,
+  BookOutlined,
+  SolutionOutlined,
+  UserOutlined,
 } from "@ant-design/icons-vue";
 import AboutAuthorModal from "./components/AboutAuthorModal.vue";
 
