@@ -2,6 +2,7 @@ import { RouteRecordRaw } from "vue-router";
 import IndexPage from "../pages/IndexPage.vue";
 import LevelsPage from "../pages/LevelsPage.vue";
 import PlaygroundPage from "../pages/PlaygroundPage.vue";
+import CodexStatusPage from "../pages/CodexStatusPage.vue";
 
 /**
  * 路由列表
@@ -25,5 +26,9 @@ export default [
   {
     path: "/playground",
     component: PlaygroundPage,
+  },
+  {
+    path: "/codex-status",
+    component: CodexStatusPage,
   },
 ] as RouteRecordRaw[];

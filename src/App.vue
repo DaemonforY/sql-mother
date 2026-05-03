@@ -19,6 +19,11 @@
           <a-menu-item key="/learn">学习</a-menu-item>
           <a-menu-item key="/levels">关卡</a-menu-item>
           <a-menu-item key="/playground">广场</a-menu-item>
+          <a-menu-item key="codex-status">
+            <span @click.stop="openCodexStatus" style="cursor: pointer; display: inline-block; width: 100%;">
+              Codex 用量
+            </span>
+          </a-menu-item>
           <a-menu-item key="about">
             <span @click.stop="showAboutModal" style="cursor: pointer; display: inline-block; width: 100%;">
               <user-outlined />
@@ -81,8 +86,15 @@ const showAboutModal = () => {
   aboutModalVisible.value = true;
 };
 
+const openCodexStatus = () => {
+  const routeData = router.resolve({
+    path: "/codex-status",
+  });
+  window.open(routeData.href, "_blank");
+};
+
 const doClickMenu = ({ key }: any) => {
-  if (key && key !== "about") {
+  if (key && key !== "about" && key !== "codex-status") {
     router.push({
       path: key,
     });
