@@ -69,7 +69,7 @@ watch([levelNum], () => {
  */
 const doWin = () => {
   alert("恭喜通关，有收获的话，欢迎给本项目一个 star 哦~");
-  window.open("https://github.com/liyupi/sql-mother");
+  window.open("https://github.com/DaemonforY/sql-mother");
 };
 
 /**

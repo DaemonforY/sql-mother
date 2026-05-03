@@ -2,13 +2,10 @@
 
 > 纯前端实现的闯关式 SQL 自学网
 >
-> By [程序员鱼皮](https://docs.qq.com/doc/DUFFRVWladXVjeUxW) ，一人全役
 
 
 
-在线体验：http://sqlmother.yupi.icu
 
-视频演示：https://www.bilibili.com/video/BV1pV4y1i7LW
 
 
 
@@ -325,7 +322,7 @@ export const runSQL = (db: Database, sql: string) => {
 5. 给项目增加一个后端，用数据库来存放关卡数据，并且支持在线提交 / 审核关卡
 6. 增加过关排行榜
 
-感谢阅读，也欢迎加入 [作者的编程学习圈](https://yupi.icu)，学习更多原创项目~
+
 
 ## 感谢赞助
 

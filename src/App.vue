@@ -19,24 +19,6 @@
           <a-menu-item key="/learn">学习</a-menu-item>
           <a-menu-item key="/levels">关卡</a-menu-item>
           <a-menu-item key="/playground">广场</a-menu-item>
-          <a-menu-item>
-            <a href="https://www.code-nav.cn" target="_blank">
-              <a-badge
-                count="new"
-                size="small"
-                :offset="[16, 24]"
-                color="green"
-              >
-                编程导航
-              </a-badge>
-            </a>
-          </a-menu-item>
-          <a-menu-item>
-            <a href="https://www.mianshiya.com" target="_blank">
-              <solution-outlined />
-              面试真题
-            </a>
-          </a-menu-item>
           <a-menu-item key="about">
             <span @click.stop="showAboutModal" style="cursor: pointer; display: inline-block; width: 100%;">
               <user-outlined />
@@ -44,7 +26,7 @@
             </span>
           </a-menu-item>
           <a-menu-item>
-            <a href="https://github.com/liyupi/sql-mother" target="_blank">
+            <a href="https://github.com/DaemonforY/sql-mother" target="_blank">
               <github-outlined />
               代码开源，欢迎 star
             </a>
@@ -65,7 +47,7 @@
       </p>
       <p>
         SQL之母 - SQL 自学网站 ©{{ currentYear }} by
-        <a href="https://github.com/liyupi" target="_blank">程序员鱼皮</a>
+        <a href="https://github.com/liyupi" target="_blank">Bryan</a>
       </p>
     </div>
     <a-back-top :style="{ right: '24px' }" />
