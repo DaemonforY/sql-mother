@@ -1,6 +1,7 @@
 import { RouteRecordRaw } from "vue-router";
 import IndexPage from "../pages/IndexPage.vue";
 import LevelsPage from "../pages/LevelsPage.vue";
+import NiukeLevelsPage from "../pages/NiukeLevelsPage.vue";
 import PlaygroundPage from "../pages/PlaygroundPage.vue";
 import CodexStatusPage from "../pages/CodexStatusPage.vue";
 
@@ -22,6 +23,10 @@ export default [
   {
     path: "/levels",
     component: LevelsPage,
+  },
+  {
+    path: "/niuke-levels",
+    component: NiukeLevelsPage,
   },
   {
     path: "/playground",

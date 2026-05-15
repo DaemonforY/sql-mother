@@ -48,7 +48,7 @@ const customLevels: LevelType[] = [
   orderConversionFunnel,
   secondHighestSalary,
   departmentHighestSalary,
-  silentUserRecall
+  silentUserRecall,
 ];
 
 export default customLevels;

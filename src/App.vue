@@ -18,6 +18,7 @@
         >
           <a-menu-item key="/learn">学习</a-menu-item>
           <a-menu-item key="/levels">关卡</a-menu-item>
+          <a-menu-item key="/niuke-levels">牛客题库</a-menu-item>
           <a-menu-item key="/playground">广场</a-menu-item>
           <a-menu-item key="codex-status">
             <span

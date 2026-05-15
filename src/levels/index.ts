@@ -1,10 +1,11 @@
 import mainLevels from "./mainLevels";
 import customLevels from "./customLevels";
+import niukeSqlLevels from "./custom/牛客SQL题库";
 
 /**
  * 全部关卡
  */
-export const allLevels = [...mainLevels, ...customLevels];
+export const allLevels = [...mainLevels, ...customLevels, ...niukeSqlLevels];
 
 /**
  * 根据 key 获取关卡
